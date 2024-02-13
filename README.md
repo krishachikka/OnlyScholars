@@ -8,3 +8,4 @@ scholarships.
 We conducted independent research to collect the scholarship data.
 <br>
 # Tech Stack Used: Node JS, EJS, AJAX, HTML, CSS3, JS, MySQL
+<video src='video.mp4' width=180/>
