@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Only Scholars</title>
+  <link rel="stylesheet" href="/styles/homepage.css">
+  <link rel="stylesheet" href="/styles/view-scholarship.css">
+
+</head>
+<body>
+<section id="detailbox"> 
+<h2><%= scholarship.ScholarshipName %></h2>
+<b>Country: </b>
+<p><%= scholarship.Country %></p>
+<b>Course: </b>
+<p><%= scholarship.Course %></p>
+<b>Provider: </b>
+<p><%= scholarship.Provider %></p>
+
+<% if (scholarship.About) { %>
+    <b>About The Scheme:</b>
+    <p><%= scholarship.About %></p>
+  <% } %>
+
+<% if (scholarship.Reward) { %>
+    <b>Reward:</b>
+  <p> <%= scholarship.Reward %></p>
+<% } %>
+
+<% if (scholarship.AcademicRequirement) { %>
+    <b>Academic Requirement: </b>
+  <p><%= scholarship.AcademicRequirement %></p>
+<% } %>
+
+<% if (scholarship.EligibilityCriteria) { %>
+    <b>Eligibility Criteria:</b>
+    <ul>
+      <% scholarship.EligibilityCriteria.split('\n').forEach(criteria => { %>
+        <% const trimmedCriteria = criteria.trim(); %>
+        <% if (trimmedCriteria) { %>
+          <li><%= trimmedCriteria %></li>
+        <% } %>
+      <% }); %>
+    </ul>
+  <% } %>
+  
+  <% if (scholarship.Documents) { %>
+    <b>Documents Required:</b>
+    <ul>
+      <% scholarship.Documents.split('\n').forEach(document => { %>
+        <% const trimmedDocument = document.trim(); %>
+        <% if (trimmedDocument) { %>
+          <li><%= trimmedDocument %></li>
+        <% } %>
+      <% }); %>
+    </ul>
+  <% } %>
+   
+<% if (scholarship.Deadlines) { %>
+    <b>Deadlines: </b>
+  <p><%= scholarship.Deadlines %></p>
+<% } %>
+
+<% if (scholarship.TentativeDeadline) { %>
+    <b>Tentative Deadline: </b>
+  <p><%= scholarship.TentativeDeadline %></p>
+<% } %>
+
+<% if (scholarship.URL) { %>
+    <p><b>Website: </b><a href="<%= scholarship.URL %>" target="_blank"><%= scholarship.ScholarshipName %></a></p>
+<% } %>
+
+<button class="back"><a href="/explore">Back to Explore</a></button>
+
+</section> 
+</body>
+</html>

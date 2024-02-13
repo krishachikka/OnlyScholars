@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Scholars</title>
+    <link rel="stylesheet" href="/styles/homepage.css">
+    <link rel="stylesheet" href="/styles/explore.css">
+    <link rel="stylesheet" href="/styles/results.css">
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.png" alt="Logo" height="150" />
+        <h1>OnlyScholars</h1>
+        <nav>
+            <ul>
+                <li><a href="/homepage.html"><ion-icon name="home"></ion-icon> Home</a></li>
+                <li><a href="#" onclick="togglePopup('aboutPopup')"><ion-icon name="information-circle"></ion-icon>
+                        About Us</a></li>
+                <li><a href="#" onclick="togglePopup('contactPopup')"><ion-icon name="call"></ion-icon> Contact Us</a>
+                </li>
+            </ul>
+            <img src="/images/user.jpg" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/images/user.jpg" alt="user">
+                        <h2>Hi Scholar!</h2>
+                    </div>
+                    <hr>
+                    <!-- <a href="#" class="sub-menu-link">
+                        <ion-icon name="person-circle"></ion-icon>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a> -->
+                    <!-- <a href="/visit" class="sub-menu-link">
+                        <ion-icon name="log-out"></ion-icon>
+                        <p>Logout</p>
+                        <span>></span>
+                    </a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hidden Popups -->
+    <div id="aboutPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('aboutPopup')">&times;</span>
+            <h2>About Us</h2>
+            <p>This is some information about our website.</p>
+            <p>Creators<ion-icon name="create"></ion-icon></p>
+            <ul class="emails">
+                <a href="mailto:krisha.221453207@vcet.edu.in"><ion-icon name="mail"></ion-icon>Krisha Chikka</a>
+                <a href="mailto:vaidehi.221623203@vcet.edu.in"><ion-icon name="mail"></ion-icon>Vaidehi Gadag</a>
+                <a href="mailto:sarth.221373101@vcet.edu.in"><ion-icon name="mail"></ion-icon>Sarth Chaudhari</a>
+                <a href="mailto:akash.222173101@vcet.edu.in"><ion-icon name="mail"></ion-icon>Akash Nadar</a>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('contactPopup')">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Feel free to contact us at</p>
+            <p><ion-icon name="mail"></ion-icon> onlyscholars69@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- <div id="profilePopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('profilePopup')">&times;</span>
+            <h2>Profile</h2>
+            <p>This is your profile information. You can view your details here.</p>
+        </div>
+    </div> -->
+
+
+    <section class="head">
+        <h2>Search for Scholarships</h2>
+        <form id="searchForm" method="POST" action="/search">
+            <div class="search-bar">
+                <p>Course</p>
+                <select name="course" id="courseSelect">
+                    <option value="Engineering">Engineering</option>
+                    <option value="Law">Law</option>
+                    <option value="Doctrate">Doctrate</option>
+                    <option value="Medical">Medicine</option>
+                    <option value="*" selected>Select</option>
+                </select>
+
+                <ul id="autocompleteList"></ul>
+            </div>
+
+            <div class="search-bar">
+                <p>Country</p>
+                <select name="country" id="countrySelect">
+                    <option value="India">India</option>
+                    <option value="*">All Other Countries</option>
+                    <option value="Australia">Australia</option>
+                    <option value="USA">United States of America</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Japan">Japan</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Switzerland" selected>Switzerland</option>
+                    <option value="#" selected>Select</option>
+                    <!--<option value="#" disabled>Engineering</option>-->
+                </select>
+
+                <ul id="autocompleteList"></ul>
+            </div>
+            <button class="searchbtn"><ion-icon name="search"></ion-icon></button>
+        </form>
+
+    </section>
+
+    <div id="scholarship-results">
+        <%- include('results.ejs') %>
+    </div>
+
+    <script src="/scripts/explore.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Scholars</title>
+    <link rel="stylesheet" href="/styles/homepage.css">
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.png" alt="Logo" height="150" />
+        <h1>OnlyScholars</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html"><ion-icon name="home"></ion-icon> Home</a></li>
+                <li><a href="#" onclick="togglePopup('aboutPopup')"><ion-icon name="information-circle"></ion-icon>
+                        About Us</a></li>
+                <li><a href="#" onclick="togglePopup('contactPopup')"><ion-icon name="call"></ion-icon> Contact Us</a>
+                </li>
+            </ul>
+            <img src="/images/user.jpg" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <form action="">
+                        <div class="user-info">
+                        <img src="/images/user.jpg" alt="user">
+                        <h2>Hi Scholar!</h2>
+                    </div>
+                    <hr>
+                    <!-- <a href="#" class="sub-menu-link">
+                        <ion-icon name="person-circle"></ion-icon>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a> -->
+                    <!-- <a href="/visit" class="sub-menu-link">
+                        <ion-icon name="log-out"></ion-icon>
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hidden Popups -->
+    <div id="aboutPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('aboutPopup')">&times;</span>
+            <h2>About Us</h2>
+            <p>This is some information about our website.</p>
+            <p>Creators<ion-icon name="create"></ion-icon></p>
+            <ul class="emails">
+                <a href="mailto:krisha.221453207@vcet.edu.in"><ion-icon name="mail"></ion-icon>Krisha Chikka</a>
+                <a href="mailto:vaidehi.221623203@vcet.edu.in"><ion-icon name="mail"></ion-icon>Vaidehi Gadag</a>
+                <a href="mailto:"><ion-icon name="mail"></ion-icon>Sarth Chaudhari</a>
+                <a href="mailto:akash.222173101@vcet.edu.in"><ion-icon name="mail"></ion-icon>Akash Nadar</a>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('contactPopup')">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Feel free to contact us at</p>
+            <p><ion-icon name="mail"></ion-icon> onlyscholars69@gmail.com</p>
+        </div>
+    </div>
+
+    <p class="intro">Welcome to our Scholarship Portal :) </p>
+    <p class="intro">
+        We understand how crucial financial aid is for students to pursue their dreams. Our platform connects you with a
+        wide range of scholarships, both national and international, to help alleviate the financial burden of
+        education.
+    <p class="intro">
+        Our primary objective is to provide you with comprehensive information on eligibility criteria for various
+        scholarships. We believe that every student deserves a fair chance, and we have curated a diverse list of
+        eligibility criteria to ensure inclusivity. Whether you are an academic achiever, an outstanding athlete, or a
+        passionate social advocate, we aim to match you with scholarships that suit your unique talents and attributes.
+    </p>
+    <p class="intro">
+        Within our portal, you will find a plethora of national scholarships provided by institutions and organizations
+        within your country. These scholarships are designed to recognize and support local talents, empowering students
+        to excel in their respective fields. In addition, we have also compiled a selection of prestigious international
+        scholarships, which cater to global-minded individuals seeking educational opportunities abroad.</p>
+    <p class="intro">We encourage you to explore ONLY SCHOLARS and embark on your journey towards a brighter future. Let
+        us connect you to the scholarships that can make your dreams a reality!</p>
+    </p>
+
+    <section>
+        <h2>Search More</h2>
+        <p>Explore a wide range of scholarship opportunities...</p>
+        <a href="/explore" class="cta-button">Explore</a>
+    </section>
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about scholarships...</p>
+        <a href="/faq.html" class="cta-button">Read FAQs</a>
+    </section>
+
+    <section>
+        <h2>Terms and Conditions</h2>
+        <p>Find answers to common questions about scholarships...</p>
+        <a href="#" class="cta-button" onclick="toggleTermsAndConditions()">Read T&C</a>
+
+        <section id="termsAndConditions" style="display: none;">
+            <p class="tc">We are dedicated to connecting students with valuable opportunities for financial aid. As we
+                provide you with the information regarding various scholarships, please take a moment to familiarize
+                yourself
+                with the terms and conditions for the information provided:</p>
+            <p class="tc">
+            <h3>Accuracy:</h3> While we strive to ensure the accuracy and reliability of the scholarship details on the
+            portal, we
+            cannot guarantee the absolute accuracy of every piece of information. It is advisable to verify the
+            information
+            with the respective scholarship providers before taking any action.</p>
+            <p class="tc">
+            <h3>Eligibility:</h3> The eligibility criteria for each scholarship are determined by the offering
+            organization. It is
+            crucial to review these requirements carefully to determine if you meet the specified criteria before
+            applying.</p>
+            <p class="tc">
+            <h3>External Links:</h3> Our portal may include external links to scholarship websites or organization
+            pages. While we
+            aim to direct you to trustworthy sources, we are not responsible for the content or privacy practices of
+            these
+            external websites.It is recommended to review their terms and conditions before providing any personal
+            information.</p>
+            <p class="tc">
+                By accessing our scholarship portal, you agree to the above terms and conditions.We aim to empower
+                students in
+                their academic journey by providing access to scholarship opportunities, but ultimately the
+                responsibility lies
+                with the applicant to make informed decisions and comply with the requirements of each scholarship. We
+                are here
+                to support you in your pursuit of educational funding. Good luck with your scholarship applications!</p>
+        </section>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Scholarship Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="/scripts/homepage.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+</body>
+
+</html>

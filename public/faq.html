@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Scholars</title>
+    <link rel="stylesheet" href="/styles/faq.css">
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.png" alt="Logo" height="150" />
+        <h1>OnlyScholars</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html"><ion-icon name="home"></ion-icon> Home</a></li>
+                <li><a href="#" onclick="togglePopup('aboutPopup')"><ion-icon name="information-circle"></ion-icon>
+                        About Us</a></li>
+                <li><a href="#" onclick="togglePopup('contactPopup')"><ion-icon name="call"></ion-icon> Contact Us</a>
+                </li>
+            </ul>
+            <!-- <img src="/images/user.jpg" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/images/user.jpg" alt="user">
+                        <h2>Hi Scholar!</h2>
+                    </div>
+                    <hr>
+                     <a href="#" class="sub-menu-link">
+                        <ion-icon name="person-circle"></ion-icon>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a> -->
+                    <!-- <a href="/visit" class="sub-menu-link">
+                        <ion-icon name="log-out"></ion-icon>
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>  -->
+        </nav>
+    </header>
+
+    <!-- Hidden Popups -->
+    <div id="aboutPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('aboutPopup')">&times;</span>
+            <h2>About Us</h2>
+            <p>This is some information about our website.</p>
+            <p>Creators<ion-icon name="create"></ion-icon></p>
+            <ul class="emails">
+                <a href="mailto:krisha.221453207@vcet.edu.in"><ion-icon name="mail"></ion-icon>Krisha Chikka</a>
+                <a href="mailto:vaidehi.221623203@vcet.edu.in"><ion-icon name="mail"></ion-icon>Vaidehi Gadag</a>
+                <a href="mailto:"><ion-icon name="mail"></ion-icon>Sarth Chaudhari</a>
+                <a href="mailto:akash.222173101@vcet.edu.in"><ion-icon name="mail"></ion-icon>Akash Nadar</a>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('contactPopup')">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Feel free to contact us at</p>
+            <p><ion-icon name="mail"></ion-icon> onlyscholars69@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="faq">
+    <img src="/images/faq.jpg" class="pic">
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordian" id="first">
+            <label for="first">What are scholarships and why should I apply for them?</label>
+            <div class="content">
+                <p>Scholarships are grants or financial aids awarded to students based on their academic, athletic,
+                    artistic, or other achievements. They provide financial assistance to help cover tuition fees,
+                    books, and other educational expenses. By applying for scholarships, you can reduce the burden of
+                    student loans and make higher education more accessible.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="second">
+            <label for="second">How can I find scholarships that I am eligible for?</label>
+            <div class="content">
+                <p>There are various ways to find scholarships. You can search online scholarship databases, consult
+                    your school's financial aid office, or reach out to community organizations, professional
+                    associations, and corporations. It's essential to thoroughly research and apply for scholarships
+                    that align with your interests, achievements, and qualifications.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="third">
+            <label for="third">What are the eligibility requirements for scholarships?</label>
+            <div class="content">
+                <p>Eligibility requirements vary depending on the scholarship provider and the specific scholarship.
+                    Some scholarships may be based on academic merit, financial need, extracurricular activities, or
+                    specific goals or majors. Criteria can also include grade point average (GPA), standardized test
+                    scores, essays, recommendation letters, and interviews. It's crucial to read the requirements
+                    carefully and submit all necessary documents.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="fourth">
+            <label for="fourth">When should I start applying for scholarships?</label>
+            <div class="content">
+                <p>It is highly recommended to start searching and applying for scholarships as early as possible. Some
+                    scholarships have early deadlines, while others require submission months in advance. By starting
+                    early, you improve your chances of finding more opportunities and give yourself enough time to
+                    complete the application process.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="fifth">
+            <label for="fifth">How do I maximize my chances of winning a scholarship?</label>
+            <div class="content">
+                <p>To maximize your chances of winning a scholarship, it's essential to focus on academic achievement,
+                    participate in extracurricular activities, and demonstrate leadership skills. Additionally, make
+                    sure to submit well-crafted essays, impressive letters of recommendation, and a complete
+                    application. Meeting all deadlines and following instructions diligently is crucial to stand out
+                    among other applicants. Continuous research, hard work, and perseverance are key to increasing your
+                    chances of winning a scholarship.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="sixth">
+            <label for="sixth">How do I apply for scholarships?</label>
+            <div class="content">
+                <p>The application process may vary depending on the scholarship provider. Typically, it involves
+                    submitting an application form, transcripts, essays, letters of recommendation, and sometimes an
+                    interview.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="seventh">
+            <label for="seventh">What types of scholarships are available?</label>
+            <div class="content">
+                <p>There are various types of scholarships, such as merit-based scholarships, need-based scholarships,
+                    athletic scholarships, minority scholarships, and scholarships specific to certain fields of study
+                    or organizations.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="eighth">
+            <label for="eighth">Can I apply for multiple scholarships?</label>
+            <div class="content">
+                <p>Yes, you can apply for multiple scholarships. It's recommended to apply for a variety of scholarships
+                    to increase your chances of receiving awards.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="ninth">
+            <label for="ninth">How much money can I receive from a scholarship?</label>
+            <div class="content">
+                <p>The amount of money awarded through scholarships varies widely. Some scholarships may cover full
+                    tuition, while others provide a smaller amount to assist with fees, books, or living expenses.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="tenth">
+            <label for="tenth">How competitive are scholarships?</label>
+            <div class="content">
+                <p>The competitiveness of scholarships varies greatly. Some scholarships may have a handful of
+                    applicants, while others receive thousands of applications. It is important to choose scholarships
+                    that align with your qualifications and interests, as this can improve your chances of success.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="eleventh">
+            <label for="eleventh">Do scholarships need to be repaid?</label>
+            <div class="content">
+                <p>No, scholarships are typically considered financial aid and do not need to be repaid. However,
+                    certain scholarships may have specific requirements, such as maintaining a certain GPA or
+                    participating in community service.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="twelweth">
+            <label for="twelweth">Is there any possible of deadline extensions for scholarships?</label>
+            <div class="content">
+                <p>Yes, a scholarship deadline may be extended, but the decision is up to the scholarship provider.
+                    OnlyScholars updates the information on its website to reflect th new deadline if extended. It is
+                    recommended to apply before the original deadline,if possible,to increase the chances of being
+                    considered.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="thirteenth">
+            <label for="thirteenth">Which are the common documents required to be uploaded while applying for a
+                scholarship?</label>
+            <div class="content">
+                <pre>The specific documents required for a scholarship application can vary depending on the 
+scholarship program and the institution offering it. However,there are several 
+common documents that are often required. Here is a list of documents that are 
+commonly requested during scholarship application :
+-Application form(if there is any)
+-Marksheets and certificates of previous qualifying examination.
+-Admission proof or bonafide letter issued by school/college.
+-Student ID proof (ID card/Bonafide Student Certificate/Letter from School)
+-Passport size photograph
+-Income Certificate
+-Aadhar Card
+-Caste Certificate(if required)
+-Domicile Certificate or residence proof(if required)
+-Disability certificate(if required)
+                </pre>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="fourteenth">
+            <label for="fourteenth">What are the criteria used for selecting scholarship recipients?</label>
+            <div class="content">
+                <p>Each Scholarship program may have its own unique set of criteria and selection process. A few common criteria for selction include academic performance, financial need, leadership qualities, extracurricular activities, community service and specific eligibility requirements set by the scholarship provider.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="fifteenth">
+            <label for="fifteenth">How do you evaluate a candidates's academic achievements and potential?</label>
+            <div class="content">
+                <p>A student's academic achievements and potential are typically evaluated through factors such as their academic transcripts, GPA, standardized teast scores, class rank and any honours or awards received. The evaluation may also consider the rigour of the student's course load and their ability to excel in challenging academic environments.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordian" id="sixteenth">
+            <label for="sixteenth">I have applied multiple times, why don't I receive any scholarship?</label>
+            <div class="content">
+                <pre>
+There can be several reasons why you may not have received a scholarship despite 
+applying for it multiple times. Some of the possible reasons include:
+
+-Not meeting the eligibility criteria: Scholarships have specific eligibility criteria, and if you 
+do not meet them, your application may be rejected. Make sure to read the eligibility 
+criteria carefully before applying for a scholarship.
+
+-High competition: Scholarships often have a large number of applicants, and the 
+selection process can be highly competitive. Even if you meet the eligibility criteria, 
+you may not receive the scholarship if other applicants meet the criteria better than you.
+
+-Incomplete or incorrect application: If your application is incomplete or contains incorrect 
+information, it may be rejected. Make sure to fill in all the required fields accurately and 
+provide all the necessary documents.
+
+-Lack of matching scholarships: Sometimes, despite applying for multiple scholarships, 
+you may not receive one simply because your profile does not match the criteria of any of 
+the available scholarships.
+
+It is important to keep in mind that receiving a scholarship is not guaranteed. It can take 
+time and effort to find the right scholarship and successfully apply for it. Keep searching 
+and applying for scholarships that match your profile and interests, and don't give up. 
+Additionally, consider improving your profile, academic record, and extracurricular 
+activities to increase your chances of receiving a scholarship in the future.
+                </pre>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <footer>
+        <p>&copy; 2023 Scholarship Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="/scripts/homepage.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+
+</html>

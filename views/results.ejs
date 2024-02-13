@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlyScholars</title>
+  <link rel="stylesheet" href="/styles/results.css">
+</head>
+<body>
+
+<div class="scholarship-boxes">
+  <% scholarships.forEach((scholarship) => { %>
+    <div class="scholarship-box">
+      <b><%= scholarship.ScholarshipName %></b>
+      <p>Country: <%= scholarship.Country %></p>
+      <p>Reward: <%= scholarship.Reward %></p>
+      <button class="view-button" data-scholarship-id="<%= scholarship.ID %>">View</button>
+    </div>
+  <% }); %>
+</div>
+
+<div id="no-scholarships" style="display: none;">
+  <p>No scholarships found</p>
+</div>
+
+</body>
+</html>

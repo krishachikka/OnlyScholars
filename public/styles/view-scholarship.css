@@ -1,0 +1,47 @@
+#detailbox{ 
+    padding: 50px;
+    padding-top: 15px;
+    margin: 20px 50px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#detailbox h2{
+    padding: 5px;
+    background: #443271;
+    color: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#detailbox b{
+    color: #7D319B;
+}
+
+#detailbox b:hover{
+    color: #443271;
+    text-shadow: 2px #7D319B;
+}
+
+.back {
+    margin: 20px;
+    background-color: #7D319B; 
+    border-radius: 5px;
+    box-shadow: 0 0 8px 2px #afaeae;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; 
+    text-align: center;
+}
+
+.back a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block; 
+}
+
+.back:hover {
+    background-color: #443271;
+    box-shadow: 0 0 8px 2px #7D319B;
+}

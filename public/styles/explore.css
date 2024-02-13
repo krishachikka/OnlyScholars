@@ -1,0 +1,111 @@
+/*style for the Profile*/
+.sub-menu-wrap{
+    border-radius: 10%;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    width: 320px;
+    color: white;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h2{
+    font-weight: 600;
+}
+
+.user-info img{
+    width: 60px;
+    border-radius: 70%;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    margin: 12px 0;
+}
+
+.sub-menu-link p{
+    width:100%;
+    margin-left: 10px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+.head h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Style the search button */
+#courseSelect,
+#countrySelect {
+    width: 250px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.searchbtn {
+    border: none;
+    outline: none;
+    background: #7D319B;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.searchbtn:hover {
+    box-shadow: 10px rgb(42, 6, 89);
+}
+
+#searchForm .searchbtn ion-icon {
+    font-size: 2em;
+}
+.search-bar {
+    display: inline-block;
+    vertical-align: middle; 
+    margin-right: 20px; 
+}

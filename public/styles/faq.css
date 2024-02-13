@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+
+*{
+    font-family:'Poppins', Courier, monospace;
+}
+
+header {
+    display: flex;
+    background-color: #443271;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+ }
+
+image{
+    position: absolute;
+    padding: 10px;
+    z-index: 10;
+} 
+
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+nav{
+    text-align: right;
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 80px;
+}
+
+nav ul li {
+    margin-top: 200px;
+    display: inline;
+    margin-left: 90px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative; 
+}
+
+.user-pic{
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: -50px;
+    margin-left: 85px;
+    position: absolute;
+} 
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0); 
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out; 
+}
+
+nav ul li a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1); 
+}
+
+.sub-menu-wrap{
+    border-radius: 10%;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    width: 320px;
+    color: white;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h2{
+    font-weight: 600;
+}
+
+.user-info img{
+    width: 60px;
+    border-radius: 70%;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    margin: 12px 0;
+}
+
+.sub-menu-link p{
+    width:100%;
+    margin-left: 10px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+.intro{ 
+    font-weight: 300;
+    margin: 20px 200px;
+}
+
+footer{
+    background-color: #443271;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+.emails {
+    
+    list-style: none;
+    padding: 0;
+}
+
+.emails a {
+    display: block;
+    margin-bottom: 10px; 
+    text-decoration: none;
+    color: #6f3232 
+}
+
+.emails a ion icon {
+    margin-right: 5px;
+}
+
+/*FAQs*/
+.accordion{
+    margin: 10px;
+    width: 600px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    font-size: small;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content{
+    max-height: 800px;
+    padding: 1px 10px 20px;
+}
+
+ .pic{
+    position: absolute;
+    width: 45%;
+    margin-left: 780px;
+ }
+
+ .faq{
+    display: block;
+ }

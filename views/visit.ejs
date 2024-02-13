@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Only Scholars</title>
+    <link rel="stylesheet" href="/styles/visit.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">OnlyScholars</h2>
+        <nav class="navbar">
+            <a href="#" onclick="togglePopup('aboutPopup')"><ion-icon name="information-circle"></ion-icon> About Us</a>
+            <a href="#" onclick="togglePopup('contactPopup')"><ion-icon name="call"></ion-icon> Contact Us</a>
+            <button class="loginbtn">Login</button>
+        </nav>
+    </header>
+
+    <h1><span>Welcome !</span></h1>
+
+     <!-- Hidden Popups -->
+     <div id="aboutPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('aboutPopup')">&times;</span>
+            <h2>About Us</h2>
+            <p>This is some information about our website.</p>
+            <p>Creators<ion-icon name="create"></ion-icon></p>
+            <ul class="emails">
+            <a href="mailto:krisha.221453207@vcet.edu.in"><ion-icon name="mail"></ion-icon>Krisha Chikka</a>
+            <a href="mailto:vaidehi.221623203@vcet.edu.in"><ion-icon name="mail"></ion-icon>Vaidehi Gadag</a>
+            <a href="mailto:"><ion-icon name="mail"></ion-icon>Sarth Chaudhari</a>
+            <a href="mailto:akash.222173101@vcet.edu.in"><ion-icon name="mail"></ion-icon>Akash Nadar</a>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="togglePopup('contactPopup')">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Feel free to contact us at</p>
+            <p><ion-icon name="mail"></ion-icon>  onlyscholars69@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- login and registration -->
+    <div class="wrapper">
+        <span class="close"><ion-icon name="close"></ion-icon></span>
+        <div class="form login">
+            <h2>Login</h2>
+            <form id="loginForm"  action="/login" method="POST">
+                <% if (typeof error !== 'undefined') { %>
+                    <div class="error-message">
+                        <%= error %>
+                    </div>
+                <% } %>
+                 
+                <div class="inputbox">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="loginEmail" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><ion-icon name="key"></ion-icon></span>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="/register" class="registerlink">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/scripts/visit.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html> 
