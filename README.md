@@ -6,12 +6,9 @@ platform for accessing comprehensive information related to national and interna
 scholarships.
 <br>
 We conducted independent research to collect the scholarship data.
-
-https://github.com/krishachikka/OnlyScholars/assets/147174716/84a6acef-7c65-4d12-83e4-6d132afa968f
-
 <br>
 # Tech Stack Used: Node JS, EJS, AJAX, HTML, CSS3, JS, MySQL
-
+https://github.com/krishachikka/OnlyScholars/assets/147174716/84a6acef-7c65-4d12-83e4-6d132afa968f
 
 ![Picture1](https://github.com/krishachikka/OnlyScholars/assets/147174716/d7ade08c-6570-410f-914f-10865cfc449a)
 ![Picture2](https://github.com/krishachikka/OnlyScholars/assets/147174716/32e7635e-be00-4dca-a50f-c556d146af2a)
